@@ -403,19 +403,8 @@
   border: 0.1rem solid var(--color-gray-100);
 }
 
-.contact form .input-box .input-field input::placeholder,
-.contact form .textarea-field textarea::placeholder {
+.contact form .input-box .input-field input::placeholder {
   color: var(--color-gray-700);
-}
-
-.contact form .textarea-field {
-  position: relative;
-  margin: 0.8rem 0 2.7rem;
-  display: flex;
-}
-
-.contact form .textarea-field textarea {
-  resize: none;
 }
 
 .contact form .btn-box.btns .btn {
