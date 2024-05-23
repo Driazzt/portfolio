@@ -53,6 +53,8 @@
   --color-body-bg-rgb: 255, 255, 255;
 }
 
+/* -------- NAV BAR --------  */
+
 .header {
   position: fixed;
   top: 0;
@@ -75,7 +77,7 @@
 }
 
 .logo:hover {
-  fill: var(--color-teal);
+  fill: var(--color-gray-300);
 }
 
 .navbar a {
@@ -90,6 +92,8 @@
 .navbar a.active {
   color: var(--color-teal);
 }
+
+/* -------- HOME --------  */
 
 .home {
   height: 100vh;
@@ -193,7 +197,9 @@
   fill: var(--color-teal);
   border: 2px solid var(--color-teal);
 }
-/* --- */
+
+/* -------- ABOUT --------  */
+
 .about {
   height: 100vh;
   display: flex;
@@ -252,7 +258,8 @@
   line-height: 2;
 }
 
-/* --- */
+/* -------- SKILLS --------  */
+
 .container {
   height: 100vh;
   position: relative;
@@ -260,7 +267,9 @@
   /* padding: 0 20%; */
   padding: 3em 3em;
 }
-
+.container .bar {
+  padding: 0px 0px 5% 0px;
+}
 .container .bar h2 {
   display: flex;
   justify-content: center;
@@ -270,7 +279,7 @@
 }
 
 .container .skills {
-  margin: 40px 0;
+  margin: 40px -20;
   display: flex;
   padding: 15px;
 }
@@ -304,7 +313,9 @@
 .container .percent {
   margin: 0px 30% 0px 60p;
 }
-/* ----  */
+
+/* -------- PORTFOLIO --------  */
+
 .portfolio {
   height: 100vh;
   position: relative;
@@ -330,6 +341,7 @@
   justify-content: center;
   text-align: center;
   display: flex;
+  margin: 70px 0px 0px 0px;
 }
 .title p {
   width: 500px;
@@ -346,7 +358,8 @@
   color: var(--color-yellow);
 }
 
-/* --- */
+/* -------- CONTACT --------  */
+
 .contact {
   min-height: auto;
   padding-bottom: 7rem;
@@ -356,6 +369,8 @@
 
 .contact .heading {
   font-size: 3em;
+  /* margin: 0px 0px 70px 0px; */
+  padding: 0px 0px 70px 0px;
 }
 
 .contact form {
@@ -386,16 +401,13 @@
 .contact form .input-box .input-field {
   position: relative;
   width: 49%;
-  margin: 0.8rem 0;
+  margin: 1rem 0;
 }
 
-.contact form .input-box .input-field input,
-.contact form .textarea-field textarea {
+.contact form .input-box .input-field input {
   width: 50%;
-  height: 50%;
+  /* height: 50%; */
   padding: 1.3rem;
-  display: flex;
-  justify-content: center;
   font-size: 1rem;
   color: var(--color-gray-100);
   background: transparent;
@@ -412,9 +424,6 @@
 }
 
 .contact form .btn-box.btns .btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 150px;
   margin: 50px 350px;
   height: 30px;
