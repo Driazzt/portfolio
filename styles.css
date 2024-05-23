@@ -71,11 +71,11 @@
   color: var(--color-gray-300);
   text-decoration: none;
   font-weight: 600;
-  fill: var(--color-indigo);
+  fill: var(--color-teal);
 }
 
 .logo:hover {
-  fill: var(--color-gray-300);
+  fill: var(--color-teal);
 }
 
 .navbar a {
@@ -88,18 +88,19 @@
 
 .navbar a:hover,
 .navbar a.active {
-  color: var(--color-indigo);
+  color: var(--color-teal);
 }
 
 .home {
   height: 100vh;
   display: flex;
   /* background: #081b29; */
-  background: url(images/img-cuted.png) no-repeat;
+  background: url(images/pixelcut-exporttv3.png) no-repeat;
   background-size: cover;
   background-position: center;
   align-items: center;
   padding: 0 10%;
+  /* padding-bottom: 6rem; */
 }
 
 .home-content {
@@ -120,19 +121,20 @@
   right: 0;
   width: 100%;
   height: 100%;
-  background: var(--color-dark-bg);
+  background: var(--color-dark);
   animation: showRight 1s ease forwards;
   animation-delay: 0.5s;
 }
 .home-content h3 {
   font-size: 32px;
   font-weight: 700;
-  color: var(--color-indigo);
+  color: var(--color-teal);
 }
 
 .home-content p {
   font-size: 16px;
   margin: 20px 0 40px;
+  line-height: 2;
 }
 
 .home-content .btn-box {
@@ -148,15 +150,15 @@
   align-items: center;
   width: 150px;
   height: 100%;
-  background-color: var(--color-indigo);
-  border: 2px solid var(--color-indigo);
+  background-color: var(--color-teal);
+  border: 2px solid var(--color-teal);
   border-radius: 8px;
   font-size: 19px;
   /* color: #var(--color-dark-bg);; */
   font-weight: 600;
   letter-spacing: 1px;
   background: transparent;
-  color: var(--color-indigo);
+  color: var(--color-teal);
 }
 
 .btn-box a:hover {
@@ -188,20 +190,81 @@
 }
 
 .svg-icons a:hover {
-  fill: var(--color-indigo);
-  border: 2px solid var(--color-gray-300);
+  fill: var(--color-teal);
+  border: 2px solid var(--color-teal);
 }
-
-.container {
-  position: relative;
+/* --- */
+.about {
+  height: 100vh;
+  display: flex;
+  /* padding: 15% 10px; */
+  padding: 3em 3em;
+  justify-content: center;
   align-items: center;
-  padding: 15% 10%;
+  flex-direction: column;
+  gap: 2rem;
+  padding-bottom: 6rem;
 }
 
-.container .bar p {
+.heading {
+  font-size: 3rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.about-img {
+  position: relative;
+  width: 25rem;
+  height: 25rem;
+  border-radius: 50%;
   display: flex;
   justify-content: center;
-  font-size: 30px;
+  align-items: center;
+}
+
+.about-img img {
+  width: 90%;
+  border-radius: 50%;
+  border: 0.2rem solid var(--color-teal);
+}
+
+.about-content {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 600px;
+}
+
+.about-content h3 {
+  /* font-size: 1.8rem; */
+  font-size: 32px;
+  font-weight: 700;
+  color: var(--color-teal);
+}
+
+.about-content p {
+  /* font-size: 1.2rem;
+  margin: 2rem 3rem 4rem 5rem */
+  font-size: 16px;
+  margin: 20px 0 40px;
+  line-height: 2;
+}
+
+/* --- */
+.container {
+  height: 100vh;
+  position: relative;
+  align-items: center;
+  /* padding: 0 20%; */
+  padding: 3em 3em;
+}
+
+.container .bar h2 {
+  display: flex;
+  justify-content: center;
+  font-size: 3em;
   font-weight: 600;
   padding: 0px 0px 40px 0px;
 }
@@ -212,7 +275,7 @@
   padding: 15px;
 }
 
-.contaienr .skills p {
+.containerr .skills p {
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -235,23 +298,151 @@
   position: absolute;
   width: var(--wth);
   height: 100%;
-  background: var(--color-indigo);
+  background: var(--color-teal);
 }
 
 .container .percent {
   margin: 0px 30% 0px 60p;
 }
-
+/* ----  */
 .portfolio {
+  height: 100vh;
   position: relative;
   align-items: start;
-  padding: 0 10%;
+  /* padding: 0 10%; */
+  padding: 3em 3em;
+  display: flex;
+  min-height: auto;
+  padding-bottom: 7rem;
+  justify-content: center;
 }
 
-.title p {
+.title h2 {
   display: flex;
   justify-content: center;
-  font-size: 30px;
+  font-size: 3em;
   font-weight: 600;
   padding: 0px 0px 40px 0px;
+}
+.title img {
+  width: 500px;
+  height: 400px;
+  justify-content: center;
+  text-align: center;
+  display: flex;
+}
+.title p {
+  width: 500px;
+  height: 400px;
+  justify-content: center;
+  font-size: 16px;
+  margin: 20px 0 40px;
+  line-height: 2;
+}
+.title p a {
+  color: var(--color-teal);
+}
+.title p a:hover {
+  color: var(--color-yellow);
+}
+
+/* --- */
+.contact {
+  min-height: auto;
+  padding-bottom: 7rem;
+  height: 100vh;
+  padding: 3em 3em;
+}
+
+.contact .heading {
+  font-size: 3em;
+}
+
+.contact form {
+  max-width: 70rem;
+  margin: 0 auto;
+  text-align: center;
+  background-color: var(--color-dark);
+}
+
+.contact form .focus {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border-radius: 0.6rem;
+  z-index: -1;
+}
+
+.contact form .input-box {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.contact form .input-box .input-field {
+  position: relative;
+  width: 49%;
+  margin: 0.8rem 0;
+}
+
+.contact form .input-box .input-field input,
+.contact form .textarea-field textarea {
+  width: 50%;
+  height: 50%;
+  padding: 1.3rem;
+  display: flex;
+  justify-content: center;
+  font-size: 1rem;
+  color: var(--color-teal);
+  background: transparent;
+  border-radius: 0.6rem;
+  border: 0.1rem solid var(--color-gray-100);
+}
+
+.contact form .input-box .input-field input::placeholder,
+.contact form .textarea-field textarea::placeholder {
+  color: var(--color-gray-700);
+}
+
+.contact form .textarea-field {
+  position: relative;
+  margin: 0.8rem 0 2.7rem;
+  display: flex;
+}
+
+.contact form .textarea-field textarea {
+  resize: none;
+}
+
+.contact form .btn-box.btns .btn {
+  cursor: pointer;
+}
+
+.contact form .btn-box.btns .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  margin: 50px 350px;
+  height: 30px;
+}
+
+.btn-box .btn {
+  background-color: var(--color-teal);
+  border: 2px solid var(--color-gray-300);
+  border-radius: 8px;
+  /* color: #var(--color-dark-bg);; */
+  font-weight: 600;
+  letter-spacing: 1px;
+  background: transparent;
+  color: var(--color-gray-300);
+}
+
+.btn-box .btn:hover {
+  color: var(--color-teal);
+  border: 2px solid var(--color-teal);
 }

@@ -24,15 +24,15 @@
       </a>
 
       <nav class="navbar">
-        <a href="#" class="active">Home</a>
-        <a href="#">About</a>
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
         <a href="#skills">Skills</a>
         <a href="#portfolio">Portfolio</a>
-        <a href="#">Contact</a>
+        <a href="#contact">Contact</a>
       </nav>
     </header>
 
-    <section class="home">
+    <section class="home" id="home">
       <div class="home-content">
         <h1>Hi, I'm Héctor</h1>
         <h3>Full Stack Developer</h3>
@@ -45,7 +45,7 @@
           <a href="files/CV HECTOR MARISCAL ESPAÑOL 2024.pdf" target="_blank"
             >Hire Me</a
           >
-          <!-- <a href="#">Let's talk</a> -->
+          <a href="#">Let's talk</a>
         </div>
       </div>
 
@@ -115,10 +115,26 @@
         </a>
       </div>
     </section>
+    <section class="about" id="about">
+      <h2 class="heading">About<span> Me</span></h2>
+      <div class="about-img">
+        <img src="images/profile-pic-cut.jpeg" alt="" />
+      </div>
+      <div class="about-content">
+        <h3>Full Stack Developer</h3>
+        <p>
+          After many changes of pace, passing through the art world, I have
+          always wanted to be part of it in one way or another. Either through
+          the main or secondary branches. A while ago I opted for programming
+          and now I am doing a Full Stack Web Development bootcamp.
+          Highlighting: HTML, CSS, SASS, JavaScript, React, NodeJS.
+        </p>
+      </div>
+    </section>
 
     <section class="container" id="skills">
       <div class="bar">
-        <p>Skills & Knowledge</p>
+        <h2>Skills & Knowledge</h2>
       </div>
       <div class="skills">
         <p>HTML5</p>
@@ -144,8 +160,47 @@
 
     <section class="portfolio" id="portfolio">
       <div class="title">
-        <p>Portfolio</p>
+        <h2>Portfolio</h2>
+        <img src="images/top-promo.jpg" alt="" class="imagesportfolio" />
+        <p>
+          First work completed. It was about making a copy of an existing web
+          page and creating a detail page for it, I chose Gladiator, you can
+          redirect from the same website. I have used HTML and CSS.
+          <span
+            ><a href="https://driazzt.github.io/ProyectoWEB/" target="_blank"
+              >Click Me</a
+            ></span
+          >
+        </p>
       </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2 class="heading">Contact <span> Me! </span></h2>
+
+      <form action="#">
+        <div class="input-box">
+          <div class="input-field">
+            <input type="text" placeholder="Full Name" required />
+            <span class="focus"></span>
+          </div>
+          <div class="input-field">
+            <input type="email" placeholder="Email Address" required />
+            <span class="focus"></span>
+          </div>
+        </div>
+
+        <div class="input-box">
+          <div class="input-field">
+            <input type="number" placeholder="Phone Number" required />
+            <span class="focus"></span>
+          </div>
+        </div>
+
+        <div class="btn-box btns">
+          <button type="submit" class="btn">Send it</button>
+        </div>
+      </form>
     </section>
   </body>
 </html>
